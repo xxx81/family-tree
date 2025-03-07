@@ -1,0 +1,296 @@
+/*Now the CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--light-gray: #ccc;
+	--light-orange: #c7b6a7;
+	--light-blue: #c8e4f8;
+	--gray: #94a0b4;
+	--black: #000;
+	--light-brown: #a78c75;
+	--dark-orange: #18140f;
+	--light-red: #ffc5c2;
+	--white: #fff;
+	--dark-violet: #5146e1;
+	
+
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	background-color: var(--light-red);
+	
+  }
+
+
+
+  /*added*/
+  
+  .tree {
+	/*background-color: #f3f0ed; 
+	overflow: auto; 
+	height: calc(100vh - var(--scrollbar-width));;*/
+	
+	white-space: nowrap;
+	background-color: var(--light-red);
+	width: 100vw;
+	height: 100vh;
+	
+	padding: 10px;
+    margin: 10px 10px 10px 5px;
+
+
+ 
+  }
+  
+  .tree ul {
+	padding-top: 20px;
+	position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	display: flex;
+  }
+  
+  .tree li {
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*added for long names*/
+	
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+	white-space: nowrap;
+	margin: 0 -2px 0 -2px;
+  }
+  /*We will use ::before and ::after to draw the connectors*/
+  
+  .tree li::before,
+  .tree li::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 50%;
+	border-top: 1px solid var(--white);
+	width: 50%;
+	height: 20px;
+  }
+  
+  .tree li::after {
+	right: auto;
+	left: 50%;
+	border-left: 1px solid var(--white);
+  }
+  /*We need to remove left-right connectors from elements without 
+  any siblings*/
+  
+  .tree li:only-child::after,
+  .tree li:only-child::before {
+	display: none;
+  }
+  /*Remove space from the top of single children*/
+  
+  .tree li:only-child {
+	padding-top: 0;
+  }
+  /*Remove left connector from first child and 
+  right connector from last child*/
+  
+  .tree li:first-child::before,
+  .tree li:last-child::after {
+	border: 0 none;
+  }
+  /*Adding back the vertical connector to the last nodes*/
+  
+  .tree li:last-child::before {
+	border-right: 1px solid var(--white);
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+  }
+  
+  .tree li:first-child::after {
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+  }
+  /*Time to add downward connectors from parents*/
+  
+  .tree ul ul::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-left: 1px solid var(--white);
+	width: 0;
+	height: 20px;
+  }
+  
+  .tree li a {
+	border: 1px solid var(--white);
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--dark-orange);
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+  }
+  /*Time for some hover effects*/
+  /*We will apply the hover effect the the lineage of the element also*/
+  
+  
+  .tree li a:hover,
+  .tree li a:hover+ul li a
+  /*.tree li a:hover+ul li a span,
+   .tree li a:hover+ul li a p
+  .tree li a:hover+ul li a img */
+ 
+  
+  
+  
+   {
+	/*background: var(--light-blue); */
+	color: var(--black);
+	border: 1px solid var(--dark-violet);
+	
+  }
+
+
+
+
+
+  /*Connector styles on hover*/
+  
+  .tree li a:hover+ul li::after,
+  .tree li a:hover+ul li::before,
+  .tree li a:hover+ul::before,
+  .tree li a:hover+ul ul::before
+   {
+	border-color: var(--dark-violet);
+  }
+
+
+  
+  .husband {
+	float: left;
+  }
+  
+  .wife {
+	margin-left: 10px;
+  }
+  
+  .wife::before {
+	/* pseudo CSS, will need to be modified */
+	
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 50%;
+	border-top: 1px solid var(--white);
+	width: 50%;
+	height: 20px;
+  }
+  /*Thats all. I hope you enjoyed it.
+  Thanks :)*/
+
+  .snap-child-at-start {
+	scroll-snap-align: start;
+  }
+
+    p {
+	font-size: 18px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  
+
+ 
+  .clan {
+	border: 1px solid yellow;
+
+
+  }
+
+  p3 {
+	border: 4px solid var(--dark-violet);
+	box-shadow: 12px 14px var(--dark-violet);
+	color: var(--dark-violet);
+    text-align: center;
+	font-size: 50px;
+	font-family: merienda;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+   
+    text-transform: uppercase;
+  }
+
+  img {
+    margin: 10px;
+    height: 120px;
+    width: 150px;
+	background-color:transparent;
+} 
+  
+#nanay {
+    height: 220px;
+    width: 300px;
+	background-color: transparent;
+}
+/*
+li ul .zeny a {
+	border: 3px solid #d7cbc0;
+  }
+
+  li ul .cora a {
+	border: 3px solid #cabbcb;
+  }
+ 
+  li ul .belen a {
+	border: 3px solid #fed4d2;
+  }
+ 
+
+  li ul .gely a {
+	border: 3px solid #fed5b9;
+  }
+ 
+  li ul .rose a {
+	border: 3px solid #bacffe;
+  }
+
+  li ul .emily a {
+	border: 3px solid #c7f1c7;
+  }
+ 
+
+  li ul .ariel a {
+	border: 3px solid #e3b4b4;
+  }
+ 
+
+  li ul .alice a {
+	border: 3px solid #adbcda;
+  }
+ */
