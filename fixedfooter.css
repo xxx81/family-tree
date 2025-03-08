@@ -175,7 +175,7 @@ html {
   position: absolute;
   
   padding-top: 10px;
-  border: 1px solid violet;
+  /*border: 1px solid violet;*/
   text-align: center;
   width: 100%;
 }
@@ -319,7 +319,7 @@ p4 {
 }
 
 .nav {
-margin: 500px auto;
+margin: 360px auto;
 padding-bottom: 0px;
 background-color: blue;
 
@@ -386,7 +386,7 @@ i.fas {
 
 
 
-@media only screen and (max-width: 920px) and (orientation: landscape) {
+@media only screen and (max-width: 920px) and (max-height: 480px) and (orientation: landscape) {
   .page-footer {
     padding-top: 0px;
     /*background-color: yellow;*/
@@ -407,7 +407,7 @@ i.fas {
     }
     
     .nav {
-    margin: 170px auto;
+    margin: 80px auto;
     padding-bottom: 0px;
     background-color: green;
     
