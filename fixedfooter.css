@@ -32,7 +32,7 @@ html {
     margin: 360px auto;
     
    
-    /*border: 3px solid brown;*/
+    border: 3px solid brown;
    
    
   }
@@ -233,6 +233,7 @@ p4 {
 
   .nav {
     margin: 450px auto;
+    border: 1px solid pink;
   }
 
 }
@@ -261,6 +262,7 @@ p2, p3 {
 
 .nav {
   margin: 500px auto;
+  border: 1px solid orange;
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
@@ -319,6 +321,7 @@ p4 {
 .nav {
 margin: 500px auto;
 padding-bottom: 0px;
+border: 1px solid blue;
 
 }
 
@@ -406,6 +409,7 @@ i.fas {
     .nav {
     margin: 170px auto;
     padding-bottom: 0px;
+    border: 1px solid black;
     
     }
   }
