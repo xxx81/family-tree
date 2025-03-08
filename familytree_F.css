@@ -23,8 +23,7 @@
 	margin: 0;
 	padding: 0;
 	background-color: var(--light-red);
-	
-  }
+}
 
 
 
@@ -33,15 +32,17 @@
   .tree {
 	/*background-color: #f3f0ed; 
 	overflow: auto; 
-	height: calc(100vh - var(--scrollbar-width));;*/
-	
-	white-space: nowrap;
-	background-color: var(--light-red);
-	width: 100vw;
-	height: 100vh;
-	
+	height: calc(100vh - var(--scrollbar-width));
+		
 	padding: 10px;
     margin: 10px 10px 10px 5px;
+*/
+	
+	white-space: nowrap;
+
+
+	
+	
 
 
  
@@ -292,16 +293,4 @@ li ul .zeny a {
   
 
  
-  .clan {
-	position: relative;
-	display: flex;
-	
-	border: 1px solid yellow;
-
-
-
-	
-
-
-  }
  */
