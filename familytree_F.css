@@ -22,7 +22,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: var(--light-red);
+	background-color: var(--light-gray);
 }
 
 
@@ -81,7 +81,7 @@
 	position: absolute;
 	top: 0;
 	right: 50%;
-	border-top: 1px solid var(--brown);
+	border-top: 1px solid var(--light-brown);
 	width: 50%;
 	height: 20px;
   }
@@ -89,7 +89,7 @@
   .tree li::after {
 	right: auto;
 	left: 50%;
-	border-left: 1px solid var(--brown);
+	border-left: 1px solid var(--light-brown);
   }
   /*We need to remove left-right connectors from elements without 
   any siblings*/
@@ -113,7 +113,7 @@
   /*Adding back the vertical connector to the last nodes*/
   
   .tree li:last-child::before {
-	border-right: 1px solid var(--brown);
+	border-right: 1px solid var(--light-brown);
 	border-radius: 0 5px 0 0;
 	-webkit-border-radius: 0 5px 0 0;
 	-moz-border-radius: 0 5px 0 0;
@@ -131,13 +131,13 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
-	border-left: 1px solid var(--brown);
+	border-left: 1px solid var(--light-brown);
 	width: 0;
 	height: 20px;
   }
   
   .tree li a {
-	border: 1px solid var(--brown);
+	border: 1px solid var(--light-brown);
 	padding: 5px 10px;
 	text-decoration: none;
 	color: var(--dark-orange);
@@ -191,24 +191,6 @@
   
   
 
-  p3 {
-	
-	background-color: var(--brown);
-	/*box-shadow: 12px 14px var(--dark-violet);
-	border: 4px solid var(--dark-violet);*/
-	color: var(--white);
-    text-align: center;
-	font-size: 50px;
-	font-family: merienda;
-	font-weight: bold;
-	letter-spacing: 5px;
-	padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-   
-    text-transform: uppercase;
-  }
 
   img {
     margin: 10px;
@@ -223,6 +205,25 @@
 	background-color: transparent;
 }
 /*
+  p3 {
+	
+	background-color: var(--brown);
+	box-shadow: 12px 14px var(--dark-violet);
+	border: 4px solid var(--dark-violet);
+	color: var(--white);
+    text-align: center;
+	font-size: 50px;
+	font-family: merienda;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+   
+    text-transform: uppercase;
+  }
+
 li ul .zeny a {
 	border: 3px solid #d7cbc0;
   }
