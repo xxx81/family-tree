@@ -14,6 +14,7 @@
 	--white: #fff;
 	--dark-violet: #5146e1;
 	--brown: #A52A2A;
+	--ash-gray:  	#E5E4E2;
 	
 
 }
@@ -22,7 +23,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: var(--light-gray);
+	background-color: var(--ash-gray);
 }
 
 
