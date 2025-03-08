@@ -255,7 +255,7 @@ p2, p3 {
 
 .nav {
   margin: 500px auto;
-	background-color: green;
+	border:1px solid green;
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
@@ -314,7 +314,7 @@ p4 {
 .nav {
 margin: 500px auto;
 padding-bottom: 0px;
-	border: 1px solid color: orange;
+	border: 1px solid orange;
 
 }
 
