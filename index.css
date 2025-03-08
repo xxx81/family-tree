@@ -30,7 +30,7 @@ html {
     justify-content: center;
     padding-bottom: 0px;
     margin: 360px auto;
-   background-color: brown; 
+   background-color: var(--white); 
    
    
    
