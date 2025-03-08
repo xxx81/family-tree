@@ -29,7 +29,7 @@ html {
     display: flex;
     justify-content: center;
     padding-bottom: 0px;
-    margin: 550px auto;
+    margin: 360px auto;
     
    
     /*border: 3px solid brown;*/
@@ -253,7 +253,7 @@ p2, p3 {
 
 
 .nav {
-  margin: 350px auto;
+  margin: 560px auto;
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
