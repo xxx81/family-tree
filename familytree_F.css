@@ -204,7 +204,16 @@
     width: 300px;
 	background-color: transparent;
 }
-/*
+
+
+p {
+	font-size: 18px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+/*s
   p3 {
 	
 	background-color: var(--brown);
@@ -284,13 +293,7 @@ li ul .zeny a {
 	scroll-snap-align: start;
   }
 
-    p {
-	font-size: 18px;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-
-  }
-
+   
   
 
  
