@@ -253,7 +253,7 @@ p2, p3 {
 
 
 .nav {
-  margin: 560px auto;
+  margin: 500px auto;
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
@@ -310,7 +310,7 @@ p4 {
 }
 
 .nav {
-margin: 560px auto;
+margin: 500px auto;
 padding-bottom: 0px;
 
 }
