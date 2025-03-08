@@ -13,6 +13,7 @@
 	--light-red: #ffc5c2;
 	--white: #fff;
 	--dark-violet: #5146e1;
+	--brown: #A52A2A;
 	
 
 }
@@ -79,7 +80,7 @@
 	position: absolute;
 	top: 0;
 	right: 50%;
-	border-top: 1px solid var(--white);
+	border-top: 1px solid var(--brown);
 	width: 50%;
 	height: 20px;
   }
@@ -87,7 +88,7 @@
   .tree li::after {
 	right: auto;
 	left: 50%;
-	border-left: 1px solid var(--white);
+	border-left: 1px solid var(--brown);
   }
   /*We need to remove left-right connectors from elements without 
   any siblings*/
@@ -111,7 +112,7 @@
   /*Adding back the vertical connector to the last nodes*/
   
   .tree li:last-child::before {
-	border-right: 1px solid var(--white);
+	border-right: 1px solid var(--brown);
 	border-radius: 0 5px 0 0;
 	-webkit-border-radius: 0 5px 0 0;
 	-moz-border-radius: 0 5px 0 0;
@@ -129,13 +130,13 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
-	border-left: 1px solid var(--white);
+	border-left: 1px solid var(--brown);
 	width: 0;
 	height: 20px;
   }
   
   .tree li a {
-	border: 1px solid var(--white);
+	border: 1px solid var(--brown);
 	padding: 5px 10px;
 	text-decoration: none;
 	color: var(--dark-orange);
@@ -224,15 +225,24 @@
 
  
   .clan {
+	position: relative;
+	display: flex;
+	
 	border: 1px solid yellow;
+
+
+
+	
 
 
   }
 
   p3 {
-	border: 4px solid var(--dark-violet);
-	box-shadow: 12px 14px var(--dark-violet);
-	color: var(--dark-violet);
+	
+	background-color: var(--brown);
+	/*box-shadow: 12px 14px var(--dark-violet);
+	border: 4px solid var(--dark-violet);*/
+	color: var(--white);
     text-align: center;
 	font-size: 50px;
 	font-family: merienda;
