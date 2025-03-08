@@ -188,54 +188,7 @@
 
 
   
-  .husband {
-	float: left;
-  }
   
-  .wife {
-	margin-left: 10px;
-  }
-  
-  .wife::before {
-	/* pseudo CSS, will need to be modified */
-	
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 50%;
-	border-top: 1px solid var(--white);
-	width: 50%;
-	height: 20px;
-  }
-  /*Thats all. I hope you enjoyed it.
-  Thanks :)*/
-
-  .snap-child-at-start {
-	scroll-snap-align: start;
-  }
-
-    p {
-	font-size: 18px;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-
-  }
-
-  
-
- 
-  .clan {
-	position: relative;
-	display: flex;
-	
-	border: 1px solid yellow;
-
-
-
-	
-
-
-  }
 
   p3 {
 	
@@ -302,5 +255,53 @@ li ul .zeny a {
 
   li ul .alice a {
 	border: 3px solid #adbcda;
+  }
+	husband {
+	float: left;
+  }
+  
+  .wife {
+	margin-left: 10px;
+  }
+  
+  .wife::before {
+	 pseudo CSS, will need to be modified 
+	
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 50%;
+	border-top: 1px solid var(--white);
+	width: 50%;
+	height: 20px;
+  }
+  Thats all. I hope you enjoyed it.
+  Thanks :)
+
+  .snap-child-at-start {
+	scroll-snap-align: start;
+  }
+
+    p {
+	font-size: 18px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  
+
+ 
+  .clan {
+	position: relative;
+	display: flex;
+	
+	border: 1px solid yellow;
+
+
+
+	
+
+
   }
  */
