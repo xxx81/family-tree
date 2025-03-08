@@ -226,6 +226,7 @@ p4 {
 
   .nav {
     margin: 450px auto;
+	  color: yellow;
   }
 
 }
@@ -254,6 +255,7 @@ p2, p3 {
 
 .nav {
   margin: 500px auto;
+	color: green;
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
@@ -312,6 +314,7 @@ p4 {
 .nav {
 margin: 500px auto;
 padding-bottom: 0px;
+	color: orange;
 
 }
 
@@ -399,6 +402,7 @@ i.fas {
     .nav {
     margin: 170px auto;
     padding-bottom: 0px;
+	    color: blue;
     
     }
   }
