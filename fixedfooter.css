@@ -218,6 +218,8 @@ p4 {
 
 }
 
+/*********MEDIA SCREEN*******************/
+
 @media only screen and (min-width: 480px) and (max-width: 700px) {
     .page-footer {
       padding-top: 10px;
@@ -236,7 +238,7 @@ p2, p3 {
 
 
 .nav {
-  margin: 650px auto;
+  margin: 360px auto;
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
@@ -271,6 +273,7 @@ p2, p3 {
 }
 
 
+
 @media only screen and (max-width: 479px) {
   .page-footer {
     padding-top: 5px;
@@ -279,20 +282,20 @@ p2, p3 {
   }
 
 p1 {
-font-size: 12px;
+font-size: 18px;
 
 }
 
 p2, p3 {
-font-size: 6px;
+font-size: 10px;
 }
 
 p4 {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .nav {
-margin: 650px auto;
+margin: 350px auto;
 padding-bottom: 0px;
 
 }
@@ -335,7 +338,7 @@ transition-delay: 0.4s;
 }
 
 i.fas {
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .menu li a {
@@ -344,8 +347,8 @@ i.fas {
 }
 
 #nanay {
-  width: 110px;
-  height: 100px;
+  width: 120px;
+  height: 110px;
 }
 
 
