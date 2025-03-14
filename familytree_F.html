@@ -14,7 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
-    <script src="frontpage.js" ></script>    
+    <script src="frontpage.js" ></script>
+ 
+        
     
 
     <title>BAUTISTA - VALINO FAMILY TREE</title>
@@ -28,7 +30,7 @@ We will create a family tree using just CSS(3)
 The markup will be simple nested lists
 -->
 
-
+<input type="range" min="16" max="100" value="16" id="range">
 
 <div class="tree">
     
@@ -332,7 +334,7 @@ The markup will be simple nested lists
                     <ul>
                         <li>
                             <a href="#"><img src="boy_face.jpeg" height="50px" width="50px">
-                                <br>Miguel Manlavi
+                                <br>Miguel Daluyon Manlavi Jr.
                             </a>
                             <ul>
                                 <li><a href="#"><img src="girl_face.jpeg" height="50px" width="50px">
@@ -344,7 +346,7 @@ The markup will be simple nested lists
                                             </a>
                                             <ul>
                                                 <li><a href="#"><img src="boy_face.jpeg" height="50px" width="50px">
-                                                    <br>Isaih Taviel Manlavi Santos
+                                                    <br>Isaiah Taviel Manlavi Santos
                                                     </a></li>
                                             </ul>
                                         </li>
@@ -438,8 +440,13 @@ The markup will be simple nested lists
 </div>
 
 </div>
+<script src="ft_1.js">
+document.getElementById('range').addEventListener('input', function()
+{
+    document.querySelector('.tree').style.fontSize = this.value + 'px';
+});
 
-
+</script>
 
 </body>
 </html>
