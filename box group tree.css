@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--light-gray: #ccc;
+
+	--light-brown: #f5e7e7;
+    --brown: #A52A2A;
+    --light-blue: #9cc5d9;
+    --teal: #2c5e77;
+    --ube: #C599B6;
+    --violet: #AA60C8;
+    --dark-brown: #A28B55;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+/*
+tbody {
+  background-color: #e4f0f5;
+}*/
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  width: 130px;
+}
+
+td, tfoot th {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+
+tfoot th {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.children {
+    background-color: white;
+    color: rgb(86, 80, 80);
+    letter-spacing: 0.35em;
+    font-weight: bold;
+    padding: 1px;
+    font-size: 5px;
+}
+
+tbody td {
+    padding: 5px;
+}
+
+.column-pg {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .row-pg {
+    -ms-flex: 50%; 
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+    flex-direction: column;
+    column-gap: 25px;
+  }
+
+  .losbanos, .a-bautista, .a-valino, .bautista, .e-bautista, 
+  .manlavi, .r-valino, .rodriguez, .villaluz {
+    margin: 10px;
+  }
+
+  .parents {
+    padding: 8px;
+  }
+
+/*********GREAT GREAT GRANDPARENTS*****/
+
+
+.bautista .children {
+    background-color: var(--light-blue);
+}
+.bautista {
+    margin: 20px;
+  
+}
+
+.bautista tfoot {
+    background-color: var(--teal);
+    color: #fff;
+}
+
+/*********GREAT GRANDPARENTS*****/
+.valino {
+    margin: 20px;
+}
+
+.valino tfoot {
+    background-color: var(--brown);
+    color: #fff;
+}
+
+.valino .children {
+    background-color: #f5c1c1;
+}
+.valino tbody {
+    background-color: var(--light-brown);
+  }
+
+/*********LOS BANOS*****/
+
+.losbanos tfoot {
+    background-color: rgb(88, 163, 88);
+    color: #fff;
+}
+
+.losbanos .children {
+    background-color: rgb(149, 224, 149);
+}
+
+.losbanos tbody {
+    background-color:  rgb(228, 239, 228);
+  }
+
+.losbanos td, .losbanos th {
+    width: 170px;
+}
+
+/*********RODRIGUEZ*****/
+
+
+.rodriguez tfoot {
+    background-color: var(--ube);
+    color: #fff;
+}
+
+.rodriguez .children {
+    background-color: #fcdaf0;
+}
+
+.rodriguez tbody {
+    background-color:  #f9ecf4;
+  }
+
+.rodriguez td, .rodriguez th {
+    width: 170px;
+}
+
+
+/*********E-BAUTISTA*****/
+
+.e-bautista tfoot {
+    background-color: var(--dark-brown);
+    color: #fff;
+}
+
+.e-bautista .children {
+    background-color: #f7e1ad;
+}
+
+.e-bautista tbody {
+    background-color:  #f8f1e3;
+  }
+
+.e-bautista td, .e-bautista th {
+    width: 170px;
+}
+
+
+/*********VILLALUZ*****/
+
+.villaluz tfoot {
+    background-color: #3B1E54;
+    color: #fff;
+}
+
+.villaluz .children {
+    background-color: #9B7EBD;
+}
+
+.villaluz tbody {
+    background-color: #f2e7fb;
+  }
+
+.villaluz td, .villaluz th {
+    width: 170px;
+}
+
+
+/*********R-VALINO*****/
+
+.r-valino tfoot {
+    background-color: #FFB26F;
+    color: #fff;
+}
+
+.r-valino .children {
+    background-color: #FFCF9D;
+}
+
+.r-valino tbody {
+    background-color:  #fdeede;
+  }
+
+.r-valino td, .r-valino th {
+    width: 170px;
+}
+
+/*********MANLAVI*****/
+
+.manlavi tfoot {
+    background-color: #504B38;
+    color: #fff;
+}
+
+.manlavi .children {
+    background-color: #EBE5C2;
+}
+
+.manlavi tbody {
+    background-color:  #F8F3D9;
+  }
+
+.manlavi td, .manlavi th {
+    width: 170px;
+}
+
+/*********A-VALINO*****/
+
+.a-valino tfoot {
+    background-color: #4C585B;
+    color: #fff;
+}
+
+.a-valino .children {
+    background-color: #A5BFCC;
+}
+
+.a-valino tbody {
+    background-color:  #daeef7;
+  }
+
+.a-valino td, .a-valino th {
+    width: 170px;
+}
+
+
+
+
+
+/*********A-BAUTISTA*****/
+
+.a-bautista tfoot {
+    background-color: #AC1754;
+    color: #fff;
+}
+
+.a-bautista .children {
+    background-color: #F37199;
+}
+
+.a-bautista tbody {
+    background-color:  #f8e5ec;
+  }
+
+.a-bautista td, .a-bautista th {
+    width: 170px;
+}
+
+
